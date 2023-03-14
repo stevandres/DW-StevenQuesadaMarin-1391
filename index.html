@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelxBox</title>
+    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+
+
+
+    </header>
+    
+    <section class="hero">
+
+        <nav class="nav container">
+
+            <img src="" class="nav_logo">
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#inicio" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#tema" class="nav__link">Flexbox</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#mockup" class="nav__link">Mockup</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#footer" class="nav__link">Acerca de</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="hero__container container" id="inicio">
+
+            <div class="hero__texts">
+                <h1 class="hero__title">Aprendamos Felxbox</h1>
+                <p class="hero__copy">Entiende y domina Felxbox desde las bases hasta lo más avanzado</p>
+                    
+            </div>
+
+            <img src="assets/undraw_pair_programming.svg" class="hero__img">
+
+        </div>
+
+
+    </section>
+
+    <main class="main">
+
+        <section class="about container" id="tema">
+
+            <div class="about__course">
+                <h2 class="title title--border">¿Que es FlexBox?</h2>
+
+                <p class="about__paragraph">Flexbox es un modelo de diseño en CSS que permite a los desarrolladores crear diseños flexibles y responsivos en páginas web. El modelo Flexbox se basa en la idea de que un contenedor (llamado "flex container") puede contener uno o más elementos (llamados "flex items"), y que estos elementos pueden ser distribuidos automáticamente dentro del contenedor según ciertas reglas.</p>
+
+                <p class="about__paragraph">En el modelo Flexbox, se utiliza el eje principal y el eje secundario para distribuir los elementos dentro del contenedor. El eje principal es la dirección principal en la que los elementos se distribuyen, mientras que el eje secundario es la dirección perpendicular al eje principal. La dirección del eje principal se define mediante la propiedad flex-direction.</p>
+                
+            </div>
+
+            <figure class="about__picture">
+                <img src="assets/undraw_responsive_re_e1nn.svg" class="about__img">
+            </figure>
+
+        </section>
+
+        <section class="card">
+            <div class="container">
+
+                <h2 class="title">Algunos ejemplos de FlexBox</h2>
+                <p class="card__copy">Las propiedades más importantes de Flexbox incluyen:</p>
+
+                <div class="card__container">
+
+                    <div class="card__item">
+                        <figure class="card__img">
+                            <img src="assets/bxl-css3.svg" >
+                        </figure>
+                        <h3 class="card__title">align-items </h3>
+                        <p class="card__paragraph">que define cómo se distribuyen los elementos a lo largo del eje secundario. Se pueden elegir cinco opciones: flex-start, flex-end, center, baseline y stretch</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+                            <img src="assets/bx-layout.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">justify-content</h3>
+                        <p class="card__paragraph">que define cómo se distribuyen los elementos a lo largo del eje principal. Se pueden elegir cinco opciones: flex-start, flex-end, center, space-between y space-around.</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+                            <img src="assets/bxs-grid.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">flex-direction</h3>
+                        <p class="card__paragraph">que define la dirección en la que los elementos se distribuyen dentro del contenedor. Se pueden elegir cuatro opciones: row, row-reverse, column y column-reverse.</p>
+                    </div>
+                    
+                    <div class="card__item">
+                        <figure class="card__img">
+                            <img src="assets/bx-code.svg" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">display: flex</h3>
+                        <p class="card__paragraph"> que convierte un contenedor en un contenedor flexible</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="course container" id="mockup">
+
+            <figure class="course__picture">
+                <img src="assets/mockup1.drawio.svg" class="course__img">
+            </figure>
+
+            <div class="course__about">
+                <h2 class="title">¿Mockup?</h2>
+                <p class="about__paragraph">Este es un ejemplo del muockup de la pagina la cual es desarrollada solo con HTML y CSS usando como ejemplo temas de FlexBox y otras con Grid</p>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container container">
+
+            <p class="footer__copyright">
+                Sitio web creado por &copy; Steven Andres Quesada
+                
+            </p>
+            <p class="footer__date">
+                Fecha de actualizacion 08/03/2023
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
