@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EBE4F4;
+}
+
+.contenedor{
+    padding: 60px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow:hidden;
+}
+
+.galeria-port{
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    grid-template-areas: 
+    ".     audio1   audio1  audio2  audio2  .   "
+    "audio3  audio3   audio4  audio4  audio5  audio5"  
+   ;
+}
+
+.audio1{
+    grid-area: audio1;
+}
+.mp3_1{
+    width: 100%;
+}
+
+.audio2{
+    grid-area: audio2;
+}
+
+
+.audio3{
+    grid-area: audio3;
+}
+
+
+.audio4{
+    grid-area: audio4;
+}
+
+
+.audio5{
+    grid-area: audio5;
+}
+
+
+
+ .audio-port{
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;}
+ 
+.player{
+    background: #fff;
+}
+
+ .player .imgbox{
+    width: 100%;
+    height: 150px;
+}
+
+ .player .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

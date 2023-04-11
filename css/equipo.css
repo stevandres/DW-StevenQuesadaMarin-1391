@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.contenedor{
+    padding: 60px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow:hidden;
+}
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    grid-template-areas: 
+    ".     img1   img1  img2  img2  .   "
+    "img3  img3   img4  img4  img5  img5"  
+   ;
+}
+
+.img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.imagen-port{
+    margin-bottom: 10px;
+    border-radius: 50%;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(246, 69%, 62%, 0.7) ;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria p{
+    color: #f2f2f2;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.titulo{
+    color:#642a73;
+    font-weight: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+.names{
+    font-weight: 600;
+}
+
+.correo{
+    font-weight: 700;
+}
+
+
+
+
+/*
+- EBE4F4
+- FFE6E7
+- CDE9FF
+- 6A5BE2
+- 1F1F3A 
+*/
